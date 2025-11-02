@@ -1,16 +1,17 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-mono-black: #000000;
-  --color-mono-darker: #171717;
-  --color-mono-dark: #404040;
-  --color-mono-gray: #737373;
-  --color-mono-light: #a3a3a3;
-  --color-mono-lighter: #e5e5e5;
-  --color-mono-white: #ffffff;
+  --color-mono-black: #2b0a1a;      /* deep wine */
+  --color-mono-darker: #4d0f2b;     /* dark rosewood */
+  --color-mono-dark: #8b1e47;       /* rich magenta-pink */
+  --color-mono-gray: #c46b9d;       /* soft rosy mauve */
+  --color-mono-light: #e6a6c7;      /* gentle pink */
+  --color-mono-lighter: #f8d6e8;    /* pale blush */
+  --color-mono-white: #fff0f7;      /* almost white-pink */
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 }
+
 
 .mono-gradient {
   background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
