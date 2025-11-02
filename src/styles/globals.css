@@ -1,34 +1,28 @@
 @import 'tailwindcss';
+
 @theme {
-  --color-mono-black: #3a0a22;      /* deep muted rose (for text/buttons) */
-  --color-mono-darker: #5b0e32;     /* bold raspberry */
-  --color-mono-dark: #a61e4d;       /* main pink tone for accents/buttons */
-  --color-mono-gray: #d47a9f;       /* softer pink-gray for borders/icons */
-  --color-mono-light: #f2a7c4;      /* light pink for backgrounds */
-  --color-mono-lighter: #fbd5e5;    /* pale pink background tone */
-  --color-mono-white: #fff5f9;      /* off-white with pink tint */
+  --color-mono-black: #000000;
+  --color-mono-darker: #171717;
+  --color-mono-dark: #404040;
+  --color-mono-gray: #737373;
+  --color-mono-light: #a3a3a3;
+  --color-mono-lighter: #e5e5e5;
+  --color-mono-white: #ffffff;
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 }
 
-
 .mono-gradient {
-  background: linear-gradient(to bottom, #fff5f9 0%, #fbd5e5 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
 }
 
 .mono-mesh {
   background:
-    radial-gradient(at 40% 20%, rgba(166, 30, 77, 0.05) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, rgba(242, 167, 196, 0.05) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, rgba(251, 213, 229, 0.05) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, rgba(255, 245, 249, 0.05) 0px, transparent 50%);
+    radial-gradient(at 40% 20%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(0, 0, 0, 0.03) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(0, 0, 0, 0.01) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgba(0, 0, 0, 0.01) 0px, transparent 50%);
 }
-
-
-.faq-content {
-  max-height: none;
-  overflow: visible;
-  opacity: 1;
-  transform: none;
-  padding-bottom: 1.25rem;
-}
+.faq-content { max-height: none; overflow: visible; opacity: 1; transform: none; padding-bottom: 1.25rem; }
