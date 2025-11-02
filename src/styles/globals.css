@@ -1,13 +1,12 @@
 @import 'tailwindcss';
-
 @theme {
-  --color-mono-black: #2b0a1a;      /* deep wine */
-  --color-mono-darker: #4d0f2b;     /* dark rosewood */
-  --color-mono-dark: #8b1e47;       /* rich magenta-pink */
-  --color-mono-gray: #c46b9d;       /* soft rosy mauve */
-  --color-mono-light: #e6a6c7;      /* gentle pink */
-  --color-mono-lighter: #f8d6e8;    /* pale blush */
-  --color-mono-white: #fff0f7;      /* almost white-pink */
+  --color-mono-black: #3a0a22;      /* deep muted rose (for text/buttons) */
+  --color-mono-darker: #5b0e32;     /* bold raspberry */
+  --color-mono-dark: #a61e4d;       /* main pink tone for accents/buttons */
+  --color-mono-gray: #d47a9f;       /* softer pink-gray for borders/icons */
+  --color-mono-light: #f2a7c4;      /* light pink for backgrounds */
+  --color-mono-lighter: #fbd5e5;    /* pale pink background tone */
+  --color-mono-white: #fff5f9;      /* off-white with pink tint */
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 }
