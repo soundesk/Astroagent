@@ -12,22 +12,6 @@
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 }
 
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    max-height: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    max-height: 500px;
-    transform: translateY(0);
-  }
-}
-
-.transition-smooth {
-  transition: all 350ms cubic-bezier(0.16, 1, 0.3, 1);
-}
 .mono-gradient {
   background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
 }
@@ -41,4 +25,57 @@
     radial-gradient(at 0% 100%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
     radial-gradient(at 80% 100%, rgba(0, 0, 0, 0.01) 0px, transparent 50%);
 }
-.faq-content { max-height: none; overflow: visible; opacity: 1; transform: none; padding-bottom: 1.25rem; }
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    max-height 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 400ms ease,
+    transform 400ms cubic-bezier(0.16, 1, 0.3, 1),
+    padding 400ms ease;
+}
+
+.faq-content.active {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  padding-bottom: 1.25rem;
+}
+
+.stagger-1 {
+  transition-delay: 100ms;
+}
+
+.stagger-2 {
+  transition-delay: 200ms;
+}
+
+.stagger-3 {
+  transition-delay: 300ms;
+}
+
+.stagger-4 {
+  transition-delay: 400ms;
+}
+
+.stagger-5 {
+  transition-delay: 500ms;
+}
+
+.stagger-6 {
+  transition-delay: 600ms;
+}
+
+.stagger-7 {
+  transition-delay: 700ms;
+}
+
+.stagger-8 {
+  transition-delay: 800ms;
+}
+
+.stagger-9 {
+  transition-delay: 900ms;
+}
