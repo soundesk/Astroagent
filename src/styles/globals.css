@@ -1,14 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Pinkish color palette */
-  --color-mono-black: #2b0a12;
-  --color-mono-darker: #4a0e1f;
-  --color-mono-dark: #8a2a4b;
+  /* Light pink color palette (replaces darks) */
+  --color-mono-black: #f2b8c6;    /* replaces old dark color */
+  --color-mono-darker: #f7c2cf;  /* hover tone */
+  --color-mono-dark: #ffd9e3;    /* accent tone */
   --color-mono-gray: #c77b98;
-  --color-mono-light: #f2b8c6;
-  --color-mono-lighter: #ffe4eb;
-  --color-mono-white: #fff5f7;
+  --color-mono-light: #ffe4eb;
+  --color-mono-lighter: #fff0f5;
+  --color-mono-white: #fff8fa;
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 }
@@ -20,7 +20,7 @@
 
 /* Pink gradient background */
 .mono-gradient {
-  background: linear-gradient(to bottom, #fff5f7 0%, #ffd9e3 100%);
+  background: linear-gradient(to bottom, #fff8fa 0%, #ffd9e3 100%);
 }
 
 /* Subtle texture */
@@ -68,3 +68,17 @@
 .stagger-3 { transition-delay: 300ms; }
 .stagger-4 { transition-delay: 400ms; }
 .stagger-5 { transition-delay: 500ms; }
+
+/* Button styles (light pink theme) */
+button,
+.btn {
+  background-color: var(--color-mono-black);
+  color: var(--color-mono-white);
+  transition: background-color 200ms ease, transform 150ms ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--color-mono-darker);
+  transform: translateY(-2px);
+}
