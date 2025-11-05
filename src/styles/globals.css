@@ -1,29 +1,25 @@
 @import 'tailwindcss';
-
 @theme {
-  --color-mono-black: #000000;
-  --color-mono-darker: #171717;
-  --color-mono-dark: #404040;
-  --color-mono-gray: #737373;
-  --color-mono-light: #a3a3a3;
-  --color-mono-lighter: #e5e5e5;
-  --color-mono-white: #ffffff;
-
+  --color-mono-black: #4a0d1f;
+  --color-mono-darker: #6b1f38;
+  --color-mono-dark: #8b4560;
+  --color-mono-gray: #b87a8e;
+  --color-mono-light: #d4a8b8;
+  --color-mono-lighter: #ffe8f0;
+  --color-mono-white: #fff5f8;
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 }
-
 .mono-gradient {
-  background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #fff5f8 0%, #ffe8f0 100%);
 }
-
 .mono-mesh {
   background:
-    radial-gradient(at 40% 20%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, rgba(0, 0, 0, 0.03) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, rgba(0, 0, 0, 0.01) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, rgba(0, 0, 0, 0.02) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, rgba(0, 0, 0, 0.01) 0px, transparent 50%);
+    radial-gradient(at 40% 20%, rgba(255, 182, 203, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(255, 182, 203, 0.2) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(255, 182, 203, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(255, 182, 203, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 182, 203, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgba(255, 182, 203, 0.1) 0px, transparent 50%);
 }
 .faq-content {
   max-height: 0;
@@ -36,46 +32,36 @@
     transform 400ms cubic-bezier(0.16, 1, 0.3, 1),
     padding 400ms ease;
 }
-
 .faq-content.active {
   max-height: 500px;
   opacity: 1;
   transform: translateY(0);
   padding-bottom: 1.25rem;
 }
-
 .stagger-1 {
   transition-delay: 100ms;
 }
-
 .stagger-2 {
   transition-delay: 200ms;
 }
-
 .stagger-3 {
   transition-delay: 300ms;
 }
-
 .stagger-4 {
   transition-delay: 400ms;
 }
-
 .stagger-5 {
   transition-delay: 500ms;
 }
-
 .stagger-6 {
   transition-delay: 600ms;
 }
-
 .stagger-7 {
   transition-delay: 700ms;
 }
-
 .stagger-8 {
   transition-delay: 800ms;
 }
-
 .stagger-9 {
   transition-delay: 900ms;
 }
